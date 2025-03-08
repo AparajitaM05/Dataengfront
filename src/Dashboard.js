@@ -37,7 +37,7 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`http://localhost:3001/metrics?timeRange=${timeRange}`);
+        const response = await axios.get(`http://16.171.31.208:3001/metrics?timeRange=${timeRange}`);
         setData(response.data);
         setError(null);
       } catch (err) {
